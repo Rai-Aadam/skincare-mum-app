@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SkinCare Mum — 100% Authentic Korean Skincare &amp; Makeup in Pakistan</title>
+<meta name="description" content="SkinCare Mum — 100% Authentic Korean skincare & makeup in Pakistan since 2024. COD across Pakistan, free shipping above Rs 5,000, code MUM10 for 10% extra off.">
+<meta name="theme-color" content="#C2185B">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="SkinCare Mum">
+<link rel="apple-touch-icon" href="./icon-192.png">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="icon" type="image/png" href="./icon-192.png">
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div class="promo-bar">🎀 10% Extra Discount Live Now &nbsp;•&nbsp; Use code <strong>MUM10</strong> &nbsp;•&nbsp; Free shipping above Rs 5,000</div>
+
+<header class="app-header">
+  <div class="header-inner">
+    <a class="brand" href="./index.html" aria-label="SkinCare Mum home">
+      <span class="brand-mark">SM</span>
+      <span class="brand-text"><strong>SkinCare Mum</strong><small>100% Authentic • Since 2024</small></span>
+    </a>
+    <div class="header-actions">
+      <span id="liveBadge" class="live-badge" title="Product source">● Loading…</span>
+      <button id="installBtn" class="btn btn-install" hidden>⬇ Install App</button>
+      <button id="cartBtn" class="icon-btn" aria-label="Open cart">🛍️ <span id="cartCount" class="count-badge">0</span></button>
+    </div>
+  </div>
+  <div class="search-row">
+    <input id="searchInput" type="search" placeholder="Search products, brands… e.g. Anua, Huda Beauty, CeraVe" aria-label="Search products" autocomplete="off">
+    <select id="sortSelect" aria-label="Sort products">
+      <option value="featured">Featured</option>
+      <option value="price-asc">Price: Low to High</option>
+      <option value="price-desc">Price: High to Low</option>
+      <option value="discount">Biggest Discount</option>
+    </select>
+  </div>
+  <div id="iosHint" class="ios-hint" hidden>
+    📱 <strong>iPhone:</strong> Tap <strong>Share</strong> <span aria-hidden="true">⎙</span> → <strong>Add to Home Screen</strong> to install SkinCare Mum.
+    <button id="iosHintClose" aria-label="Dismiss">✕</button>
+  </div>
+</header>
+
+<main>
+  <!-- HOME VIEW -->
+  <section id="view-home" class="view active">
+    <div class="hero">
+      <div class="hero-copy">
+        <span class="hero-eyebrow">KOREAN SKINCARE • MAKEUP • PAKISTAN</span>
+        <h1>Glow, the<br>authentic way.</h1>
+        <p>100% Authentic Korean skincare &amp; makeup, delivered across Pakistan with Cash on Delivery.</p>
+        <div class="hero-ctas">
+          <button class="btn btn-primary" data-goto="shop">Shop Now →</button>
+          <a class="btn btn-ghost" href="https://skincaremum.com" target="_blank" rel="noopener">Visit Website</a>
+        </div>
+        <div class="trust-row">
+          <span>✓ 100% Authentic</span><span>✓ COD Pakistan</span><span>✓ 30-Day Return</span><span>✓ 24/7 Support</span>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true"><span class="hero-initial">SM</span><span class="hero-tag">MUM10 = 10% OFF</span></div>
+    </div>
+
+    <div class="offer-strip">
+      <div><strong>MUM10</strong><small>10% extra off</small></div>
+      <div><strong>Free Shipping</strong><small>Orders above Rs 5,000</small></div>
+      <div><strong>COD</strong><small>Across Pakistan</small></div>
+      <div><strong>30 Days</strong><small>Easy return</small></div>
+    </div>
+
+    <h2 class="section-title">Shop by Brand</h2>
+    <div id="brandChipsHome" class="chips"></div>
+
+    <h2 class="section-title">Top Sellers <span id="homeCount" class="muted"></span></h2>
+    <div id="featuredGrid" class="grid"></div>
+    <div class="center"><button class="btn btn-outline" data-goto="shop">View All Products →</button></div>
+  </section>
+
+  <!-- SHOP VIEW -->
+  <section id="view-shop" class="view">
+    <h2 class="section-title">Shop All Products</h2>
+    <div id="brandChipsShop" class="chips"></div>
+    <label class="filter-row"><input type="checkbox" id="inStockOnly"> In stock only</label>
+    <p id="resultCount" class="muted"></p>
+    <div id="productGrid" class="grid"></div>
+    <p id="emptyState" class="empty" hidden>No products match your search / filter. Try clearing the search or choosing “All Brands”.</p>
+  </section>
+
+  <!-- WISHLIST VIEW -->
+  <section id="view-wishlist" class="view">
+    <h2 class="section-title">My Wishlist ❤️</h2>
+    <p class="muted">Tap the heart on any product to save it here. Saved on this device only.</p>
+    <div id="wishlistGrid" class="grid"></div>
+    <p id="wishlistEmpty" class="empty">Your wishlist is empty yet. Tap ♥ on a product to save it.</p>
+  </section>
+
+  <section class="info-strip">
+    <h2>Why shop with SkinCare Mum?</h2>
+    <ul>
+      <li><strong>100% Authentic</strong> — Korean skincare &amp; makeup, since 2024.</li>
+      <li><strong>Cash on Delivery</strong> across Pakistan. <strong>Free shipping</strong> above Rs 5,000.</li>
+      <li><strong>30 Days Return</strong> &amp; <strong>24/7 Support</strong>.</li>
+      <li><strong>Code MUM10</strong> — 10% extra discount, applied in the cart here.</li>
+    </ul>
+    <p class="muted small">Prices &amp; stock in this app are loaded live from skincaremum.com. Checkout for card / website payment happens on the website; COD orders from this app go via WhatsApp.</p>
+  </section>
+</main>
+
+<footer>
+  <p><strong>SkinCare Mum</strong> — Korean Skincare &amp; Makeup, Pakistan</p>
+  <p>📍 DHA Phase 5, Lahore &nbsp;•&nbsp; ✉️ <a href="mailto:skincaremum33@gmail.com">skincaremum33@gmail.com</a> &nbsp;•&nbsp; 📞 <a href="tel:+923180404069">+92 318 0404069</a></p>
+  <p><a href="https://wa.me/923180404069" target="_blank" rel="noopener">WhatsApp us</a> &nbsp;•&nbsp; <a href="https://skincaremum.com" target="_blank" rel="noopener">skincaremum.com</a></p>
+  <p class="muted small">© 2026 SkinCare Mum. App v1 — installable PWA, no App Store / Play Store needed.</p>
+</footer>
+
+<!-- BOTTOM NAV -->
+<nav class="bottom-nav" aria-label="App navigation">
+  <button data-nav="home" class="nav-item active">🏠<span>Home</span></button>
+  <button data-nav="shop" class="nav-item">🛒<span>Shop</span></button>
+  <button data-nav="wishlist" class="nav-item">❤️<span>Wishlist</span><span id="wishCount" class="count-badge" hidden>0</span></button>
+  <button id="navCart" class="nav-item">🛍️<span>Cart</span><span id="cartCountNav" class="count-badge" hidden>0</span></button>
+</nav>
+
+<!-- PRODUCT MODAL -->
+<div id="productModal" class="modal" hidden role="dialog" aria-modal="true" aria-label="Product details">
+  <div class="modal-backdrop" data-close-modal></div>
+  <div class="modal-card">
+    <button class="modal-close" data-close-modal aria-label="Close">✕</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<!-- CART DRAWER -->
+<div id="cartDrawer" class="drawer" hidden role="dialog" aria-modal="true" aria-label="Shopping cart">
+  <div class="drawer-backdrop" data-close-cart></div>
+  <aside class="drawer-card">
+    <div class="drawer-head"><h2>Your Cart 🛍️</h2><button class="modal-close" data-close-cart aria-label="Close cart">✕</button></div>
+    <div id="shipProgress" class="ship-progress"></div>
+    <div id="cartItems"></div>
+    <div class="cart-summary">
+      <label class="promo-row">Promo code
+        <span><input id="promoInput" value="MUM10" aria-label="Promo code"> <button id="applyPromo" class="btn btn-small">Apply</button></span>
+      </label>
+      <p id="promoMsg" class="muted small"></p>
+      <div class="sum-row"><span>Subtotal</span><strong id="cartSubtotal">Rs 0</strong></div>
+      <div class="sum-row" id="discountRow" hidden><span>Discount (MUM10 −10%)</span><strong id="cartDiscount">− Rs 0</strong></div>
+      <div class="sum-row"><span>Shipping</span><strong id="cartShipping">—</strong></div>
+      <div class="sum-row total"><span>Total</span><strong id="cartTotal">Rs 0</strong></div>
+      <p class="muted small">Shipping: Free above Rs 5,000, otherwise charged as per website at checkout. COD available across Pakistan.</p>
+      <button id="whatsappCheckout" class="btn btn-primary btn-block">Order via WhatsApp (COD) 💬</button>
+      <a id="webCheckout" class="btn btn-outline btn-block" href="https://skincaremum.com" target="_blank" rel="noopener">Checkout on Website →</a>
+      <button id="clearCart" class="btn btn-ghost btn-block">Clear Cart</button>
+    </div>
+  </aside>
+</div>
+
+<div id="installBanner" class="install-banner" hidden>
+  <span class="brand-mark small">SM</span>
+  <div><strong>Install SkinCare Mum App</strong><small>Add to your home screen — fast, offline-friendly, no store needed.</small></div>
+  <button id="installBannerBtn" class="btn btn-primary btn-small">Install</button>
+  <button id="installBannerClose" class="btn btn-ghost btn-small" aria-label="Dismiss install banner">✕</button>
+</div>
+
+<div id="toast" class="toast" hidden></div>
+
+<script src="./app.js"></script>
+</body>
+</html>
