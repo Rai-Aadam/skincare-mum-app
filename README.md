@@ -27,7 +27,8 @@ Customers install it from Chrome (Android / desktop) or Safari (iPhone) — "Add
 | `app.js` | All logic — vanilla JS, **no framework, no build step**. Edit offers in the `CONFIG` block at the top |
 | `manifest.webmanifest` | App name, icon, colours, `display: standalone`, `start_url: ./index.html` |
 | `sw.js` | Service worker — cache-first for the shell, network-first for `products.json` |
-| `icon-192.png` / `icon-512.png` | "SM" monogram on blush pink |
+| `logo.png` | Real SkinCare Mum logo — "SKINCARE MUM / GLOW LIKE NEVER BEFORE", black on white, used in the header and hero |
+| `icon-192.png` / `icon-512.png` | App install icons made from the real logo, white square, cropped so the logo reads at small size |
 | `README.md` | This file |
 
 All paths are **relative** (`./…`), so the app works opened from the file system *and* from GitHub Pages. No absolute `/` paths.

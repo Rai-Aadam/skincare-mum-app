@@ -2,8 +2,8 @@
    App shell: cache-first. products.json: network-first (live prices/stock).
    No push notifications (iOS Safari does not support web push for PWAs
    in the same way as Android; see README limitations). */
-const CACHE = "skincare-mum-v1";
-const SHELL = ["./", "./index.html", "./styles.css", "./app.js", "./manifest.webmanifest", "./icon-192.png", "./icon-512.png"];
+const CACHE = "skincare-mum-v2";
+const SHELL = ["./", "./index.html", "./styles.css", "./app.js", "./manifest.webmanifest", "./logo.png", "./icon-192.png", "./icon-512.png", "./icon.svg"];
 
 self.addEventListener("install", (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(SHELL)).then(() => self.skipWaiting()));
